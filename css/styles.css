@@ -234,6 +234,11 @@ body {
     font-weight: 300;
 }
 
+.hero-section {
+    padding-top: 80px; /* Adjust based on your navbar height */
+    min-height: calc(100vh - 80px); /* Maintain full viewport height */
+}
+
 .btn-primary-custom {
     background: var(--primary-gradient);
     border: none;
@@ -576,4 +581,40 @@ body {
 .testimonial-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+.highlight {
+    background: linear-gradient(45deg, var(--accent-color), #667eea);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.service-icon i {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon i {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Update the tech icons in the hero section */
+.tech-icon {
+    color: var(--accent-color);
+    opacity: 0.2;
+    animation: float 15s infinite ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
