@@ -24,6 +24,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-padding-top: 80px;
+}
+
 /* Glassmorphism utilities */
 .glass {
     background: var(--glass-bg);
